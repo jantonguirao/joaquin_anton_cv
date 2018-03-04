@@ -49,7 +49,8 @@
 
 \makeatother
 
-\usepackage[scale=0.85]{geometry}
+%%\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.90]{geometry}
 \usepackage{multicol}
 \definecolor{gray1}{rgb}{0.925,0.925,0.925}% dark grey
 \definecolor{blue3}{rgb}{0.067,0.396, 0.616}
@@ -61,7 +62,7 @@
 \mobile{(+48) 536-177-918}
 \email{j.anton.guirao@gmail.com}
 \homepage{www.linkedin.com/in/jantonguirao/en}
-\photo[70pt][0.4pt]{./orla.jpg}
+\photo[70pt][0.4pt]{pic2.jpg}
 \begin{document}
 \maketitle
 
@@ -79,54 +80,59 @@
 \section{Key Skills}
 \cvitem{Programming}{ \itbox{C++} (\itbox{C++11} \itbox{STL} \itbox{Boost}) \itbox{C} \itbox{Java} \itbox{Bash} \itbox{Python} \itbox{Matlab} }{}{}
 \cvitem{Concepts}{\itbox{OOP} \itbox{Algorithms and Data Structures} \itbox{Design Patterns} \itbox{Multithreading} \itbox{TDD} }{}{}
-\cvitem{Tools}{ \itbox{CMake} \itbox{GCC} \itbox{Emacs} \itbox{GDB} \itbox{Git} \itbox{P4} \itbox{SVN} }{}{}
-\cvitem{Misc.}{ \itbox{GNU/Linux} \itbox{XML} \itbox{HTML} \itbox{SQL} \itbox{GTest/GMock} \itbox{JUnit} }{}{}
+\cvitem{Misc.}{ \itbox{GNU/Linux} \itbox{CMake} \itbox{GCC} \itbox{Emacs} \itbox{GDB} \itbox{Git} \itbox{SVN} \itbox{P4} \itbox{Conan} \itbox{GTest/GMock} \itbox{XML}}{}{}
 
 %\vspace{-5mm}
 \section{Professional Experience}
 
-\cventry{8/2013--Present}{Samsung Electronics R\&D}{Software Engineer (3/2015 -- Present), Junior Software Engineer (8/2013 -- 2/2015)}{Warsaw, Poland}{}
+\cventry{11/2016--Present}{FARA}{Software Engineer}{Warsaw, Poland}{}
 {
   \begin{itemize}
-    \item C++ software development for DTV products, on embedded multithreaded environments.
-    \item Involved in the early design of Tizen TV (embedded linux) middleware layer.
-    \item Full software development lifecycle, including gathering technical requirements, software design, implementation, unit testing, writing technical documentation and software maintenance for several platforms and country regions.
-  \end{itemize} }
-
-\cventry{9/2012--6/2013}{Amadeus}{Software
-  Engineer}{Nice, France}{}
-{ \begin{itemize}
-  \item Full software development cycle in Java SE for various e-commerce products related with the travel industry.
-  \item My tasks included formulating technical requirements, design, implementation, unit tests, maintenance and writing documentation.
+  \item C++ software development for public transport ticketing application running on vehicle onboard computers for multiple platforms and regions.
+  \item Integration with new hardware and external services, implementation of Calypso contactless card standard.
   \end{itemize}
 }
 
-%% \cventry{9/2011--6/2012}{NPO TUT Robotics Club}{Computer Vision Engineer /
-%%   Collaborator}{Tallinn, Estonia}{}
-%% {
-%%   C++ SW development for an autonomous soccer robot participating on the competition Robotex 2011. Responsible of designing and implementing the computer vision system of the robot, including  object recognition and scene understanding
-%% }
+\cventry{8/2013--10/2016}{Samsung Electronics R\&D}{Software Engineer}{Warsaw, Poland}{}
+{
+  \begin{itemize}
+  \item C++ software development running on embedded multithreaded environments for various Digital TV platforms and regions.
+  \item Involved in the early design of Tizen TV middleware layer and implementation of the DVB CI+ 1.4 standard.
+  \end{itemize}
+}
+
+\cventry{9/2012--6/2013}{Amadeus (via SII)}{Software
+  Engineer}{Nice, France}{}
+{
+  \begin{itemize}
+  \item Java software development for e-commerce products related to travel industry and user profile data management.
+  \item Full SW development lifecycle: formulating technical requirements, design, implementation, unit testing, maintenance and documentation.
+  \end{itemize}
+}
 
 \cventry{5/2010--7/2011}{ITI - Instituto
   Tecnológico de Informática}{Research Intern}{Valencia, Spain}{}
-{         \begin{itemize}
-          \item Research on Computer Vision and Machine Learning methods applied to medical diagnosis.
-          \item Developed an application in C for the medical comunity (\url{http://dmscan.iti.upv.es/en}).
-          \item Exhaustive experimentation and statistical validation of the methods proposed which led to several publications.
-          \end{itemize} }
+{ \begin{itemize}
+  \item Research on Computer Vision and Machine Learning methods applied to medical diagnosis.
+  \item Developed an application for the medical community (\url{http://dmscan.iti.upv.es/en}) and co-authored several scientific papers about the proposed methods.
+\end{itemize} }
+
+\section{Other projects}
+\cventry{9/2011--6/2012}{NPO TUT Robotics Club}{Computer Vision}{Tallinn, Estonia}{}
+{
+  C++ SW development for an autonomous soccer robot for the Robotex competition.
+}
 
 \section{Education}
 \cventry{2011--2012}{\mbox{Exchange Student EE/CS}}{KTH Royal Institute of Technology}{}{Stockholm, Sweden}{ Average grade: A - Letter Grade: A (best) to F (worst)}
-\cventry{2009--2012}{\mbox{M.Sc. in Telecommunication Engineering}}{\mbox{Polytechnic University of Valencia (UPV)}}{}{Valencia, Spain}{Average grade: 8.6 / 10.0 }
-\cventry{2005--2009}{\mbox{B.Sc. in Telecommunication
-    Engineering}}{\mbox{University of Alicante (UA)}}{}{Alicante,
-  Spain}{Average grade: 8.23 / 10.0 }
+\cventry{2009--2012}{\mbox{M.Sc. in Telecommunication Engineering}}{\mbox{Polytechnic University of Valencia}}{}{Valencia, Spain}{Average grade: 8.6 / 10.0 }
+\cventry{2005--2009}{\mbox{B.Sc. in Telecommunication Engineering}}{\mbox{University of Alicante}}{}{Alicante, Spain}{Average grade: 8.23 / 10.0 }
 
 \section{Languages}
 \begin{multicols}{3}
   \cvlanguage{English}{Advanced}{}
   \cvlanguage{Spanish}{Native}{}
-  \cvlanguage{Polish}{Basics}{}
+  \cvlanguage{Polish}{Elementary}{}
 \end{multicols}
 
 \renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
