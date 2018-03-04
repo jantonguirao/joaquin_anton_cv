@@ -1,0 +1,133 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\makeatletter
+
+\tikzset{%
+  fancy quotes/.style={
+    text width=\fq@width pt,
+    inner sep=.3em,
+    anchor=north west,
+    minimum width=\textwidth,
+ },
+  fancy quotes width/.initial={.8\textwidth},
+  fancy quotes marks/.style={
+    scale=8,
+    text=gray!99,
+    inner sep=0pt,
+ },
+  fancy quotes opening/.style={
+    fancy quotes marks,
+ },
+  fancy quotes closing/.style={
+    fancy quotes marks,
+ },
+  fancy quotes background/.style={
+    show background rectangle,
+    inner frame xsep=0pt,
+    background rectangle/.style={
+      fill=white,
+      rounded corners,
+   },
+ }
+}
+
+\newenvironment{fancyquotes}[1][]{%
+\noindent
+\tikzpicture[fancy quotes background]
+\node[fancy quotes opening,anchor=north west] (fq@ul) at (0,0) {``};
+\tikz@scan@one@point\pgfutil@firstofone(fq@ul.east)
+\pgfmathsetmacro{\fq@width}{\textwidth - 2*\pgf@x}
+\node[fancy quotes,#1] (fq@txt) at (fq@ul.north west) \bgroup}
+{\egroup;
+\node[overlay,fancy quotes closing,anchor=east] at (fq@txt.south east) {''};
+\endtikzpicture}
+
+\makeatother
+
+\usepackage[scale=0.85]{geometry}
+\usepackage{multicol}
+\definecolor{gray1}{rgb}{0.925,0.925,0.925}% dark grey
+\definecolor{blue3}{rgb}{0.067,0.396, 0.616}
+\newcommand{\itbox}[1]{\colorbox{gray1}{{\color{blue3}\mbox{#1}}}}
+
+\firstname{Joaquín}
+\familyname{Antón}
+\title{Software Engineer}
+\mobile{(+48) 536-177-918}
+\email{j.anton.guirao@gmail.com}
+\homepage{www.linkedin.com/in/jantonguirao/en}
+\photo[70pt][0.4pt]{./orla.jpg}
+\begin{document}
+\maketitle
+
+%% \vspace{-5mm}
+%% \section{Summary}
+%% \cvitem{}{\vspace{-5mm}\small\begin{itemize}
+%%   \item I am a Software Engineer with more than 5 years of commercial experience on C++, C and Java.
+%%   \item I am familiar with the full SW development lifecycle (requirement analysis, design, implementation, documentation, testing).
+%%   \item I am keen to apply modern SW design patterns and clean code principles to the code I produce.
+%%   \item I have a demonstrated ability to work on multicultural environments.
+%% \end{itemize}
+%% }
+
+\vspace{-5mm}
+\section{Key Skills}
+\cvitem{Programming}{ \itbox{C++} (\itbox{C++11} \itbox{STL} \itbox{Boost}) \itbox{C} \itbox{Java} \itbox{Bash} \itbox{Python} \itbox{Matlab} }{}{}
+\cvitem{Concepts}{\itbox{OOP} \itbox{Algorithms and Data Structures} \itbox{Design Patterns} \itbox{Multithreading} \itbox{TDD} }{}{}
+\cvitem{Tools}{ \itbox{CMake} \itbox{GCC} \itbox{Emacs} \itbox{GDB} \itbox{Git} \itbox{P4} \itbox{SVN} }{}{}
+\cvitem{Misc.}{ \itbox{GNU/Linux} \itbox{XML} \itbox{HTML} \itbox{SQL} \itbox{GTest/GMock} \itbox{JUnit} }{}{}
+
+%\vspace{-5mm}
+\section{Professional Experience}
+
+\cventry{8/2013--Present}{Samsung Electronics R\&D}{Software Engineer (3/2015 -- Present), Junior Software Engineer (8/2013 -- 2/2015)}{Warsaw, Poland}{}
+{
+  \begin{itemize}
+    \item C++ software development for DTV products, on embedded multithreaded environments.
+    \item Involved in the early design of Tizen TV (embedded linux) middleware layer.
+    \item Full software development lifecycle, including gathering technical requirements, software design, implementation, unit testing, writing technical documentation and software maintenance for several platforms and country regions.
+  \end{itemize} }
+
+\cventry{9/2012--6/2013}{Amadeus}{Software
+  Engineer}{Nice, France}{}
+{ \begin{itemize}
+  \item Full software development cycle in Java SE for various e-commerce products related with the travel industry.
+  \item My tasks included formulating technical requirements, design, implementation, unit tests, maintenance and writing documentation.
+  \end{itemize}
+}
+
+%% \cventry{9/2011--6/2012}{NPO TUT Robotics Club}{Computer Vision Engineer /
+%%   Collaborator}{Tallinn, Estonia}{}
+%% {
+%%   C++ SW development for an autonomous soccer robot participating on the competition Robotex 2011. Responsible of designing and implementing the computer vision system of the robot, including  object recognition and scene understanding
+%% }
+
+\cventry{5/2010--7/2011}{ITI - Instituto
+  Tecnológico de Informática}{Research Intern}{Valencia, Spain}{}
+{         \begin{itemize}
+          \item Research on Computer Vision and Machine Learning methods applied to medical diagnosis.
+          \item Developed an application in C for the medical comunity (\url{http://dmscan.iti.upv.es/en}).
+          \item Exhaustive experimentation and statistical validation of the methods proposed which led to several publications.
+          \end{itemize} }
+
+\section{Education}
+\cventry{2011--2012}{\mbox{Exchange Student EE/CS}}{KTH Royal Institute of Technology}{}{Stockholm, Sweden}{ Average grade: A - Letter Grade: A (best) to F (worst)}
+\cventry{2009--2012}{\mbox{M.Sc. in Telecommunication Engineering}}{\mbox{Polytechnic University of Valencia (UPV)}}{}{Valencia, Spain}{Average grade: 8.6 / 10.0 }
+\cventry{2005--2009}{\mbox{B.Sc. in Telecommunication
+    Engineering}}{\mbox{University of Alicante (UA)}}{}{Alicante,
+  Spain}{Average grade: 8.23 / 10.0 }
+
+\section{Languages}
+\begin{multicols}{3}
+  \cvlanguage{English}{Advanced}{}
+  \cvlanguage{Spanish}{Native}{}
+  \cvlanguage{Polish}{Basics}{}
+\end{multicols}
+
+\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
+\end{document}
