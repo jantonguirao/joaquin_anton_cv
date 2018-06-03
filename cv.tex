@@ -56,6 +56,8 @@
 \definecolor{blue3}{rgb}{0.067,0.396, 0.616}
 \newcommand{\itbox}[1]{\colorbox{gray1}{{\color{blue3}\mbox{#1}}}}
 
+\newcommand{\mylink}[3][blue3]{\href{#2}{\color{#1}{#3}}}%
+
 \firstname{Joaquín}
 \familyname{Antón}
 \title{Software Engineer}
@@ -66,23 +68,22 @@
 \begin{document}
 \maketitle
 
-%% \vspace{-5mm}
-%% \section{Summary}
-%% \cvitem{}{\vspace{-5mm}\small\begin{itemize}
-%%   \item I am a Software Engineer with more than 5 years of commercial experience on C++, C and Java.
-%%   \item I am familiar with the full SW development lifecycle (requirement analysis, design, implementation, documentation, testing).
-%%   \item I am keen to apply modern SW design patterns and clean code principles to the code I produce.
-%%   \item I have a demonstrated ability to work on multicultural environments.
-%% \end{itemize}
-%% }
+\vspace{-10mm}
+\section{Summary}
+\cvitem{}{\vspace{-5mm}\small\begin{itemize}
+\item Software Engineer with 7+ years of experience designing and implementing complex systems.
+\item I feel most comfortable with C++ (C++11/14/17, Boost) and Embedded Linux environments.
+\item I have special interest in building Computer Vision and Machine Learning pipelines.
+\end{itemize}
+}
 
 \vspace{-5mm}
 \section{Key Skills}
-\cvitem{Programming}{ \itbox{C++} (\itbox{C++11} \itbox{STL} \itbox{Boost}) \itbox{C} \itbox{Java} \itbox{Python} \itbox{Bash} \itbox{Matlab} }{}{}
+\cvitem{Programming}{ \itbox{C++} (\itbox{C++11/14/17} \itbox{STL} \itbox{Boost}) \itbox{C} \itbox{Python} \itbox{Java} \itbox{Bash} \itbox{Matlab} }{}{}
 \cvitem{Concepts}{\itbox{OOP} \itbox{Algorithms and Data Structures} \itbox{Computer Vision} \itbox{Machine Learning} }{}{}
-\cvitem{}{\itbox{Design Patterns} \itbox{Multithreading} \itbox{TDD} }{}{}
-\cvitem{Misc.}{ \itbox{GNU/Linux} \itbox{CMake} \itbox{Git} \itbox{SVN} \itbox{P4} \itbox{Conan} \itbox{Docker} \itbox{Bamboo}}{}{}
-\cvitem{}{\itbox{GTest/GMock} \itbox{Protobuf} \itbox{XML} \itbox{GDB} \itbox{Emacs} }{}{}
+\cvitem{}{\itbox{Design Patterns} \itbox{Multithreading} \itbox{TDD} \itbox{Scrum} }{}{}
+\cvitem{Misc.}{ \itbox{GNU/Linux} \itbox{CMake} \itbox{Git} \itbox{SVN} \itbox{P4} \itbox{Conan} \itbox{Docker} \itbox{Bamboo} \itbox{GTest/GMock} }{}{}
+\cvitem{}{\itbox{Protobuf} \itbox{OpenCV} \itbox{GDB} \itbox{Emacs} }{}{}
 
 %\vspace{-5mm}
 \section{Professional Experience}
@@ -98,7 +99,7 @@
 \cventry{8/2013--10/2016}{Samsung Electronics R\&D}{Software Engineer}{Warsaw, Poland}{}
 {
   \begin{itemize}
-  \item C++ software development running on embedded multithreaded environments for various Digital TV platforms and regions.
+  \item C++ software development running on embedded multithreaded environments for Digital TV platforms.
   \item Involved in the early design of Tizen TV middleware layer and implementation of the DVB CI+ 1.4 standard.
   \end{itemize}
 }
@@ -108,7 +109,6 @@
 {
   \begin{itemize}
   \item Java software development for e-commerce products related to travel industry and user profile data management.
-  \item Full SW development lifecycle: technical requirements, design, implementation, unit testing, maintenance and documentation.
   \end{itemize}
 }
 
